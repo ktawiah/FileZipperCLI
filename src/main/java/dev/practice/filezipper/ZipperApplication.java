@@ -2,12 +2,14 @@ package dev.practice.filezipper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.shell.command.annotation.CommandScan;
 
+@CommandScan
 @SpringBootApplication
-public class FileZipperApplication {
+public class ZipperApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FileZipperApplication.class, args);
+        SpringApplication.run(ZipperApplication.class, args);
     }
 
 }

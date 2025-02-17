@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-public class FileZipper {
+public class Zipper {
 
     /**
      * Compresses the given file or directory into a zip archive.

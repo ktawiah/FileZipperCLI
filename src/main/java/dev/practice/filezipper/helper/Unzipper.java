@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-public class FileUnzipper {
+public class Unzipper {
 
     /**
      * Extracts the content of a zip file into the specified destination directory.
