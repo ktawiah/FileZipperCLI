@@ -52,11 +52,11 @@ public class Zipper {
     private void zipDirectory(File dir, String parentDir, ZipOutputStream zos) throws IOException {
         // Add a trailing '/' to the zip entry for directories
         if (Objects.requireNonNull(dir.listFiles()).length == 0) {
-            zos.putNextEntry(new ZipEntry(parentDir + "/"));
+            zos.putNextEntry(new ZipEntry(parentDir + File.separator));
             zos.closeEntry(); // Close empty directory entry
         } else {
             for (File file : Objects.requireNonNull(dir.listFiles())) {
-                zipRecursively(file, parentDir + "/" + file.getName(), zos);
+                zipRecursively(file, parentDir + File.separator + file.getName(), zos);
             }
         }
     }
